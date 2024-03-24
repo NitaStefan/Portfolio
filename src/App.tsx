@@ -20,7 +20,7 @@ const theme = createTheme({
 function App() {
   return (
     <ThemeProvider theme={theme}>
-      <BrowserRouter>
+      <BrowserRouter basename="/Portfolio">
         <Header />
         <Routes>
           <Route path="" element={<Home />}></Route>
