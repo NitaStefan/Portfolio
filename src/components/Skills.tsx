@@ -54,7 +54,7 @@ const Skills = () => {
           gap: "8px",
           flexWrap: "wrap",
           paddingBottom: "30px",
-          margin: "0 48px",
+          margin: isSmallScreen ? "0 48px" : "0",
         }}
       >
         {skills.hard.map((skill, idx) => (
@@ -64,7 +64,7 @@ const Skills = () => {
               borderRadius: "10px",
               border: "2px solid black",
               width: "fit-content",
-              p: "8px 30px",
+              p: isSmallScreen ? "8px 30px" : "0 6px",
             }}
           >
             <ListItemText primary={skill} />
@@ -102,7 +102,7 @@ const Skills = () => {
           display: "flex",
           gap: "8px",
           flexWrap: "wrap",
-          margin: "0 48px",
+          margin: isSmallScreen ? "0 48px" : "0",
         }}
       >
         {skills.soft.map((skill, idx) => (
@@ -112,7 +112,7 @@ const Skills = () => {
               borderRadius: "10px",
               border: "2px solid black",
               width: "fit-content",
-              p: "8px 30px",
+              p: isSmallScreen ? "8px 30px" : "0 6px",
             }}
           >
             <ListItemText primary={skill} />
